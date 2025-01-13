@@ -25,7 +25,7 @@
 }
 .listActivity{
         display: flex;
-            justify-content: space-between;
+            justify-content: center;
             background-color: #b3b0b0;
                 border-top: 1px solid #868585;
             height: 120px;
