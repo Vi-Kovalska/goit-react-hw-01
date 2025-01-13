@@ -1,0 +1,25 @@
+.table{
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 60px;
+}
+
+.tableBody{
+border: 1px solid black;
+color: black;
+}
+.td{
+    border: 1px solid black;
+}
+.td:first-child{
+    text-transform: capitalize;
+}
+
+.tableBody > tr:nth-child(odd){
+background-color: #d8d8d8d5;
+}
+.tableHead {
+    color: beige;
+    font-weight: 400;
+    background-color: #202020d5;
+}

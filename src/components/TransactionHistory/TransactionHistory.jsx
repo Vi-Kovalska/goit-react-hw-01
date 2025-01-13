@@ -1,18 +1,18 @@
-import React from 'react'
+import css from './TransactionHistory.module.css'
 
 function Tr({id, type, amount, currency}) {
     return (
-            <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <>
+      <td className={css.td}>{type}</td>
+      <td className={css.td}>{amount}</td>
+      <td className={css.td}>{currency}</td>
+    </>
     )
 }
 const TransactionHistory = ({items}) => {
   return (
-    <table>
-  <thead>
+    <table className={css.table}>
+  <thead className={css.tableHead}>
     <tr>
       <th>Type</th>
       <th>Amount</th>
@@ -20,8 +20,11 @@ const TransactionHistory = ({items}) => {
     </tr>
   </thead>
 
-          <tbody>
-              {items.map(item => <Tr {...item} /> )}         
+      <tbody className={css.tableBody}>
+        {items.map(item =>
+        <tr key={item.id}>
+           <Tr {...item} />   
+          </tr> )}
   </tbody>
 </table>
 

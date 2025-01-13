@@ -1,0 +1,30 @@
+
+.listFriends{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+.divItemFriend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+border: 1px solid #202020;
+border-radius: 8px;
+width: 70px;
+padding: 10px;
+}
+.friendAvatar{
+    margin-left: auto;
+        margin-right: auto;
+}
+.friendName{
+    font-weight: 500;
+    color: black;
+}
+.online{
+    color: green;
+}
+.offline{
+    color: red;
+}
