@@ -28,14 +28,14 @@
             justify-content: space-between;
             background-color: #b3b0b0;
                 border-top: 1px solid #868585;
-            
+            height: 120px;
 }
 .itemActivity{
     display: flex;
         justify-content: center;
         flex-direction: column;
         color: black;
-
+position: relative;
      
 }
 .itemActivity span:last-child{
@@ -47,8 +47,8 @@
 .spanAfter::after{
     content: "";
     position: absolute;
-        left: 250px;
-        top: 377px;
+        left: 185px;
+        top: -1px;
         border-radius: 2px;
         width: 1px;
         height: 120px;
@@ -57,8 +57,8 @@
 .spanBefore::before{
     content: "";
         position: absolute;
-        left: 155px;
-        top: 377px;
+        left: -20px;
+        top: -1px;
         border-radius: 2px;
         width: 1px;
         height: 120px;
