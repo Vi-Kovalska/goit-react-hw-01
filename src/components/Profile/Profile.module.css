@@ -33,18 +33,21 @@
 .itemActivity{
     display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         color: black;
-position: relative;
-     
 }
+.itemActivity:first-child, .itemActivity:nth-child(2){
+    border-right: 1px solid #868585; ;
+}
+
 .itemActivity span:last-child{
     font-weight: 500;
 }
 .itemActivity span:first-child {
     font-size: 18px;
 }
-.spanAfter::after{
+/* .spanAfter::after{
     content: "";
     position: absolute;
         left: 185px;
@@ -63,4 +66,4 @@ position: relative;
         width: 1px;
         height: 120px;
         background-color: #868585;
-}
+} */
